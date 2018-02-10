@@ -1,0 +1,34 @@
+#contact-form {
+	@include clearfix;
+
+		
+	@include desktop {
+		min-height: em(616);
+	}
+
+	.wpcf7 {
+		form {
+			max-width: em(450);
+			margin: em(16) auto;
+			.wpcf7-form-control-wrap {
+				input {
+					background-color: rgba(255,255,255,0.4);
+					&[type="text"],
+					&[type="email"] {
+						border-radius: em(16);
+					}
+				}
+				textarea {
+					background-color: rgba(255,255,255,0.4);
+				}
+			}
+			.btn {
+				&.btn-primary {
+					display: block;
+					border-radius: em(12);
+					margin: em(16) auto;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,86 @@
+body {
+	.hero-form {
+		background-image: url('../img/hero/hero-banner.jpg');
+		min-height: 100vh;
+		@include bgparallax;
+		@include desktop{
+			height: em(600);
+			min-height: em(600);
+			overflow: hidden;
+		}
+
+		h1{
+			margin: 0 auto;
+			width: em(128);
+			height: em(128);
+			display: block;
+			@include desktop{
+				margin: 0;
+				width: em(228);
+				height: em(228);
+				position: absolute;
+				top: em(20);
+				left: em(70);
+			}
+			img {
+				max-width: 100%;
+				display: block;
+			}
+		}
+
+		h2 {
+			text-transform: uppercase;
+			font-family: $bold;
+			font-weight: 700;
+		}
+
+		p {
+			margin-bottom: em(35);
+			padding-bottom: em(35);
+			border-bottom: 3px solid $grey;
+		}
+
+		.hero-form--form {
+			background-color: $lgrey;
+			padding: em(30);
+			text-align: center;
+			p {
+				border: none;
+				padding-bottom: inherit;
+			}
+			@include desktop{
+				min-height: em(600);
+				width: em(500);
+				float: right;
+				margin-right: em(130);
+			}
+			.wpcf7 {
+				text-align: left;
+				form {
+					.wpcf7-form-control-wrap {
+						input {
+							background-color: $white;
+							border: 1px solid $grey;
+							&[type="text"],
+							&[type="email"],
+							&[type="tel"] {
+								width: 100%;
+								padding: em(14);
+							}
+						}
+					}
+					.btn {
+						&.btn-primary {
+							display: block;
+							border-radius: em(12);
+							margin: em(16) 0;
+							background-color: transparent;
+							color: $grey;
+							border: 1px solid $grey;
+						}
+					}
+				}
+			}
+		}
+	}
+}

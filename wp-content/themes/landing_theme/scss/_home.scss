@@ -1,0 +1,110 @@
+body {
+	&.home {
+		// LÑocations block
+		.locations {
+			padding-top: em(40);
+			padding-bottom: em(40);
+			@include clearfix;
+			.location--block {
+				text-align: center;
+				background-color: $lgreen;
+				height: em(447);
+				padding: em(40) em(18);
+				header {
+					position: relative;
+					padding-bottom: em(20);
+					margin-bottom: em(20);
+					&::after {
+						content: "";
+						discplay: block;
+						width: em(150);
+						height: em(4);
+						background-color: $green;
+						position: absolute;
+						bottom: 0;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+					img {
+						display: inline-block;
+						max-width: 100%;
+					}
+					h3 {
+						color: $green;
+						font-family: $bold;
+						font-weight: 700;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+
+		//values
+		.values {
+			text-align: center;
+			.header {
+				background-color: $green;
+				position: relative;
+				padding: em(14) 0;
+				@include desktop {
+					&::after,
+					&::before {
+						content: "";
+						width: em(120);
+						height: em(6);
+						background-color: $white;
+						display: block;
+						position: absolute;
+						top: 48%;
+					}
+					&::before {
+						left: 0;
+					}
+					&::after {
+						right: 0;
+					}
+				}
+				h2 {
+					font-family: $bold;
+					font-weight: 700;
+					color: $white;
+					margin: 0;
+				}
+			}
+
+			.content-values {
+				text-align: center;
+				background-image: url('../img/hero/bg-contacto.jpg');
+				min-height: em(400);
+				@include bgparallax;
+				ul {
+					padding: 0;
+					@include desktop {
+						padding: em(80) 0;
+					}
+					li{
+						&.values--block {
+							text-align: center;
+							display: inline-block;
+							vertical-align: top;
+							@include desktop {
+								width: 19.2%;
+							}
+							img {
+								display: inline-block;
+							}
+							h3 {
+								color: $white;
+								font-size: em(15);
+								font-family: $bold;
+								font-weight: 700;
+								width: 100%;
+								text-transform: uppercase;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
