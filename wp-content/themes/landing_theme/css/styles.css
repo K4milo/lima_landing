@@ -2480,6 +2480,21 @@ body .hero-form {
     border-radius: 0.75em;
     margin: 1em auto; }
 
+.site-footer {
+  background-image: url("../img/hero/bg-footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1.875em 0 0;
+  color: #ffffff;
+  text-align: center; }
+  .site-footer img {
+    display: inline-block;
+    max-width: 11.125em; }
+  .site-footer ul li {
+    text-align: left; }
+    .site-footer ul li a {
+      color: #ffffff; }
+
 body.home .locations {
   padding-top: 2.5em;
   padding-bottom: 2.5em; }
@@ -2567,3 +2582,22 @@ body.home .values {
           font-weight: 700;
           width: 100%;
           text-transform: uppercase; }
+
+@media (min-width: 1200px) {
+  body.home .container-map > div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48%;
+    padding: 1.875em; } }
+
+body.home .container-map > div.text--map {
+  text-align: center; }
+  @media (min-width: 1200px) {
+    body.home .container-map > div.text--map {
+      text-align: right; } }
+  body.home .container-map > div.text--map h3 {
+    color: #859332;
+    font-size: 1.875em;
+    font-family: "Open Sans Bold";
+    font-weight: 700;
+    text-transform: uppercase; }

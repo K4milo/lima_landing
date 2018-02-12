@@ -1,6 +1,6 @@
 body {
 	&.home {
-		// LÑocations block
+		// Locations block
 		.locations {
 			padding-top: em(40);
 			padding-bottom: em(40);
@@ -102,6 +102,31 @@ body {
 								text-transform: uppercase;
 							}
 						}
+					}
+				}
+			}
+		}
+
+		// Mapas
+		.container-map {
+			> div {
+				@include desktop {
+					display: inline-block;
+					vertical-align: middle;
+					width: 48%;
+					padding: em(30);
+				}
+				&.text--map {
+					text-align: center;
+					@include desktop { 
+						text-align: right;
+					}
+					h3 {
+						color: $green;
+						font-size: em(30);
+						font-family: $bold;
+						font-weight: 700;
+						text-transform: uppercase;
 					}
 				}
 			}

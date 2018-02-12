@@ -1,3 +1,23 @@
 .site-footer {
-	
+	background-image: url('../img/hero/bg-footer.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: em(30) 0 0;
+	color: $white;
+	text-align: center;
+	img {
+		display: inline-block;
+		max-width: em(178);
+	}
+	ul {
+		li {
+			text-align: left;
+			a {
+				color: $white;
+			}
+		}
+	}
+	.col1 {
+
+	}
 }
