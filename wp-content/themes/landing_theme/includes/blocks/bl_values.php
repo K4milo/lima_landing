@@ -26,7 +26,7 @@
 		<div class="location--block">
 			<header>
 				<img src="<?php bloginfo('template_url');?>/img/icons/city.png" alt="Conjunto Lima" />
-				<h3>Vide en una ciudad <br/> dentro de otra</h3>	
+				<h3>Vive en una ciudad <br/> dentro de otra</h3>	
 			</header>
 			<p>
 				Con una ubicación privilegiada, al lado del centro comercial Buenavista de Montería y Homecenter, somos un proyecto que promete brindar la comodidad y confort a toda la familia.

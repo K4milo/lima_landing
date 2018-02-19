@@ -10,10 +10,16 @@ body {
 				background-color: $lgreen;
 				height: em(447);
 				padding: em(40) em(18);
+				@include mobile {
+					margin-bottom: em(30);
+				}
 				header {
 					position: relative;
 					padding-bottom: em(20);
 					margin-bottom: em(20);
+					@include desktop {
+						min-height: em(186);
+					}
 					&::after {
 						content: "";
 						discplay: block;

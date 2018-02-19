@@ -2504,13 +2504,19 @@ body.home .locations {
     clear: both; }
   body.home .locations .location--block {
     text-align: center;
-    background-color: #C6D77C;
+    background-color: #dfeab0;
     height: 27.9375em;
     padding: 2.5em 1.125em; }
+    @media (max-width: 767px) {
+      body.home .locations .location--block {
+        margin-bottom: 1.875em; } }
     body.home .locations .location--block header {
       position: relative;
       padding-bottom: 1.25em;
       margin-bottom: 1.25em; }
+      @media (min-width: 1200px) {
+        body.home .locations .location--block header {
+          min-height: 11.625em; } }
       body.home .locations .location--block header::after {
         content: "";
         discplay: block;
